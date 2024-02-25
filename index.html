@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barevné šachy</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div id="board">
+        <div class="semiboard" id="s1">
+            <div class="blackboard" id="box0116"></div>
+            <div class="whiteboard r15" id="box0115"></div>
+            <div class="blackboard r14" id="box0114"></div>
+            <div class="whiteboard r13" id="box0113"></div>
+            <div class="blackboard r12" id="box0112"></div>
+            <div class="whiteboard r11" id="box0111"></div>
+            <div class="blackboard r10" id="box0110"></div>
+            <div class="whiteboard r09" id="box0109"></div>
+            <div class="whiteboard c2" id="box0216"></div>
+            <div class="blackboard r15 c2" id="box0215"></div>
+            <div class="whiteboard r14 c2" id="box0214"></div>
+            <div class="blackboard r13 c2" id="box0213"></div>
+            <div class="whiteboard r12 c2" id="box0212"></div>
+            <div class="blackboard r11 c2" id="box0211"></div>
+            <div class="whiteboard r10 c2" id="box0210"></div>
+            <div class="blackboard r09 c2" id="box0209"></div>
+            <div class="blackboard c3" id="box0316"></div>
+            <div class="whiteboard r15 c3" id="box0315"></div>
+            <div class="blackboard r14 c3" id="box0314"></div>
+            <div class="whiteboard r13 c3" id="box0313"></div>
+            <div class="blackboard r12 c3" id="box0312"></div>
+            <div class="whiteboard r11 c3" id="box0311"></div>
+            <div class="blackboard r10 c3" id="box0310"></div>
+            <div class="whiteboard r09 c3" id="box0309"></div>
+            <div class="whiteboard c4" id="box0416"></div>
+            <div class="blackboard r15 c4" id="box0415"></div>
+            <div class="whiteboard r14 c4" id="box0414"></div>
+            <div class="blackboard r13 c4" id="box0413"></div>
+            <div class="whiteboard r12 c4" id="box0412"></div>
+            <div class="blackboard r11 c4" id="box0411"></div>
+            <div class="whiteboard r10 c4" id="box0410"></div>
+            <div class="blackboard r09 c4" id="box0409"></div>
+            <div class="blackboard c5" id="box0516"></div>
+            <div class="whiteboard r15 c5" id="box0515"></div>
+            <div class="blackboard r14 c5" id="box0514"></div>
+            <div class="whiteboard r13 c5" id="box0513"></div>
+            <div class="special r12 c5" id="box0512"></div>
+            <div class="whiteboard r11 c5" id="box0511"></div>
+            <div class="blackboard r10 c5" id="box0510"></div>
+            <div class="whiteboard r09 c5" id="box0509"></div>
+            <div class="whiteboard c6" id="box0616"></div>
+            <div class="blackboard r15 c6" id="box0615"></div>
+            <div class="whiteboard r14 c6" id="box0614"></div>
+            <div class="blackboard r13 c6" id="box0613"></div>
+            <div class="whiteboard r12 c6" id="box0612"></div>
+            <div class="special r11 c6" id="box0611"></div>
+            <div class="whiteboard r10 c6" id="box0610"></div>
+            <div class="blackboard r09 c6" id="box0609"></div>
+            <div class="blackboard c7" id="box0716"></div>
+            <div class="whiteboard r15 c7" id="box0715"></div>
+            <div class="blackboard r14 c7" id="box0714"></div>
+            <div class="whiteboard r13 c7" id="box0713"></div>
+            <div class="blackboard r12 c7" id="box0712"></div>
+            <div class="whiteboard r11 c7" id="box0711"></div>
+            <div class="blackboard r10 c7" id="box0710"></div>
+            <div class="whiteboard r09 c7" id="box0709"></div>
+            <div class="whiteboard c8" id="box0816"></div>
+            <div class="blackboard r15 c8" id="box0815"></div>
+            <div class="whiteboard r14 c8" id="box0814"></div>
+            <div class="blackboard r13 c8" id="box0813"></div>
+            <div class="whiteboard r12 c8" id="box0812"></div>
+            <div class="special r11 c8" id="box0811"></div>
+            <div class="whiteboard r10 c8" id="box0810"></div>
+            <div class="blackboard r09 c8" id="box0809"></div>
+        </div>
+        <div class="semiboard" id="s2">
+            <div class="blackboard" id="box0108"></div>
+            <div class="whiteboard r15" id="box0107"></div>
+            <div class="blackboard r14" id="box0106"></div>
+            <div class="whiteboard r13" id="box0105"></div>
+            <div class="blackboard r12" id="box0104"></div>
+            <div class="whiteboard r11" id="box0103"></div>
+            <div class="blackboard r10" id="box0102"></div>
+            <div class="whiteboard r09" id="box0101"></div>
+            <div class="whiteboard c2" id="box0208"></div>
+            <div class="blackboard r15 c2" id="box0207"></div>
+            <div class="whiteboard r14 c2" id="box0206"></div>
+            <div class="blackboard r13 c2" id="box0205"></div>
+            <div class="whiteboard r12 c2" id="box0204"></div>
+            <div class="blackboard r11 c2" id="box0203"></div>
+            <div class="whiteboard r10 c2" id="box0202"></div>
+            <div class="blackboard r09 c2" id="box0201"></div>
+            <div class="blackboard c3" id="box0308"></div>
+            <div class="whiteboard r15 c3" id="box0307"></div>
+            <div class="blackboard r14 c3" id="box0306"></div>
+            <div class="whiteboard r13 c3" id="box0305"></div>
+            <div class="blackboard r12 c3" id="box0304"></div>
+            <div class="whiteboard r11 c3" id="box0303"></div>
+            <div class="blackboard r10 c3" id="box0302"></div>
+            <div class="whiteboard r09 c3" id="box0301"></div>
+            <div class="whiteboard c4" id="box0408"></div>
+            <div class="blackboard r15 c4" id="box0407"></div>
+            <div class="whiteboard r14 c4" id="box0406"></div>
+            <div class="blackboard r13 c4" id="box0405"></div>
+            <div class="whiteboard r12 c4" id="box0404"></div>
+            <div class="blackboard r11 c4" id="box0403"></div>
+            <div class="whiteboard r10 c4" id="box0402"></div>
+            <div class="blackboard r09 c4" id="box0401"></div>
+            <div class="blackboard c5" id="box0508"></div>
+            <div class="whiteboard r15 c5" id="box0507"></div>
+            <div class="blackboard r14 c5" id="box0506"></div>
+            <div class="whiteboard r13 c5" id="box0505"></div>
+            <div class="blackboard r12 c5" id="box0504"></div>
+            <div class="whiteboard r11 c5" id="box0503"></div>
+            <div class="blackboard r10 c5" id="box0502"></div>
+            <div class="whiteboard r09 c5" id="box0501"></div>
+            <div class="whiteboard c6" id="box0608"></div>
+            <div class="blackboard r15 c6" id="box0607"></div>
+            <div class="whiteboard r14 c6" id="box0606"></div>
+            <div class="blackboard r13 c6" id="box0605"></div>
+            <div class="whiteboard r12 c6" id="box0604"></div>
+            <div class="blackboard r11 c6" id="box0603"></div>
+            <div class="whiteboard r10 c6" id="box0602"></div>
+            <div class="blackboard r09 c6" id="box0601"></div>
+            <div class="blackboard c7" id="box0708"></div>
+            <div class="whiteboard r15 c7" id="box0707"></div>
+            <div class="blackboard r14 c7" id="box0706"></div>
+            <div class="whiteboard r13 c7" id="box0705"></div>
+            <div class="blackboard r12 c7" id="box0704"></div>
+            <div class="whiteboard r11 c7" id="box0703"></div>
+            <div class="blackboard r10 c7" id="box0702"></div>
+            <div class="whiteboard r09 c7" id="box0701"></div>
+            <div class="whiteboard c8" id="box0808"></div>
+            <div class="blackboard r15 c8" id="box0807"></div>
+            <div class="whiteboard r14 c8" id="box0806"></div>
+            <div class="blackboard r13 c8" id="box0805"></div>
+            <div class="whiteboard r12 c8" id="box0804"></div>
+            <div class="blackboard r11 c8" id="box0803"></div>
+            <div class="whiteboard r10 c8" id="box0802"></div>
+            <div class="blackboard r09 c8" id="box0801"></div>
+        </div>
+        <div class="semiboard" id="s3">
+            <div class="blackboard" id="box0916"></div>
+            <div class="whiteboard r15" id="box0915"></div>
+            <div class="blackboard r14" id="box0914"></div>
+            <div class="whiteboard r13" id="box0913"></div>
+            <div class="blackboard r12" id="box0912"></div>
+            <div class="whiteboard r11" id="box0911"></div>
+            <div class="blackboard r10" id="box0910"></div>
+            <div class="whiteboard r09" id="box0909"></div>
+            <div class="whiteboard c2" id="box1016"></div>
+            <div class="blackboard r15 c2" id="box1015"></div>
+            <div class="whiteboard r14 c2" id="box1014"></div>
+            <div class="blackboard r13 c2" id="box1013"></div>
+            <div class="whiteboard r12 c2" id="box1012"></div>
+            <div class="blackboard r11 c2" id="box1011"></div>
+            <div class="whiteboard r10 c2" id="box1010"></div>
+            <div class="blackboard r09 c2" id="box1009"></div>
+            <div class="blackboard c3" id="box1116"></div>
+            <div class="whiteboard r15 c3" id="box1115"></div>
+            <div class="blackboard r14 c3" id="box1114"></div>
+            <div class="whiteboard r13 c3" id="box1113"></div>
+            <div class="blackboard r12 c3" id="box1112"></div>
+            <div class="whiteboard r11 c3" id="box1111"></div>
+            <div class="blackboard r10 c3" id="box1110"></div>
+            <div class="whiteboard r09 c3" id="box1109"></div>
+            <div class="whiteboard c4" id="box1216"></div>
+            <div class="blackboard r15 c4" id="box1215"></div>
+            <div class="whiteboard r14 c4" id="box1214"></div>
+            <div class="blackboard r13 c4" id="box1213"></div>
+            <div class="whiteboard r12 c4" id="box1212"></div>
+            <div class="blackboard r11 c4" id="box1211"></div>
+            <div class="whiteboard r10 c4" id="box1210"></div>
+            <div class="blackboard r09 c4" id="box1209"></div>
+            <div class="blackboard c5" id="box1316"></div>
+            <div class="whiteboard r15 c5" id="box1315"></div>
+            <div class="blackboard r14 c5" id="box1314"></div>
+            <div class="whiteboard r13 c5" id="box1313"></div>
+            <div class="blackboard r12 c5" id="box1312"></div>
+            <div class="whiteboard r11 c5" id="box1311"></div>
+            <div class="blackboard r10 c5" id="box1310"></div>
+            <div class="whiteboard r09 c5" id="box1309"></div>
+            <div class="whiteboard c6" id="box1416"></div>
+            <div class="blackboard r15 c6" id="box1415"></div>
+            <div class="whiteboard r14 c6" id="box1414"></div>
+            <div class="blackboard r13 c6" id="box1413"></div>
+            <div class="whiteboard r12 c6" id="box1412"></div>
+            <div class="blackboard r11 c6" id="box1411"></div>
+            <div class="whiteboard r10 c6" id="box1410"></div>
+            <div class="blackboard r09 c6" id="box1409"></div>
+            <div class="blackboard c7" id="box1516"></div>
+            <div class="whiteboard r15 c7" id="box1515"></div>
+            <div class="blackboard r14 c7" id="box1514"></div>
+            <div class="whiteboard r13 c7" id="box1513"></div>
+            <div class="blackboard r12 c7" id="box1512"></div>
+            <div class="whiteboard r11 c7" id="box1511"></div>
+            <div class="blackboard r10 c7" id="box1510"></div>
+            <div class="whiteboard r09 c7" id="box1509"></div>
+            <div class="whiteboard c8" id="box1616"></div>
+            <div class="blackboard r15 c8" id="box1615"></div>
+            <div class="whiteboard r14 c8" id="box1614"></div>
+            <div class="blackboard r13 c8" id="box1613"></div>
+            <div class="whiteboard r12 c8" id="box1612"></div>
+            <div class="blackboard r11 c8" id="box1611"></div>
+            <div class="whiteboard r10 c8" id="box1610"></div>
+            <div class="blackboard r09 c8" id="box1609"></div>
+        </div>
+        <div class="semiboard" id="s4">
+            <div class="blackboard" id="box0908"></div>
+            <div class="whiteboard r15" id="box0907"></div>
+            <div class="blackboard r14" id="box0906"></div>
+            <div class="whiteboard r13" id="box0905"></div>
+            <div class="blackboard r12" id="box0904"></div>
+            <div class="whiteboard r11" id="box0903"></div>
+            <div class="blackboard r10" id="box0902"></div>
+            <div class="whiteboard r09" id="box0901"></div>
+            <div class="whiteboard c2" id="box1008"></div>
+            <div class="blackboard r15 c2" id="box1007"></div>
+            <div class="whiteboard r14 c2" id="box1006"></div>
+            <div class="blackboard r13 c2" id="box1005"></div>
+            <div class="whiteboard r12 c2" id="box1004"></div>
+            <div class="blackboard r11 c2" id="box1003"></div>
+            <div class="whiteboard r10 c2" id="box1002"></div>
+            <div class="blackboard r09 c2" id="box0101"></div>
+            <div class="blackboard c3" id="box1108"></div>
+            <div class="whiteboard r15 c3" id="box1107"></div>
+            <div class="blackboard r14 c3" id="box1106"></div>
+            <div class="whiteboard r13 c3" id="box1105"></div>
+            <div class="blackboard r12 c3" id="box1104"></div>
+            <div class="whiteboard r11 c3" id="box1103"></div>
+            <div class="blackboard r10 c3" id="box1102"></div>
+            <div class="whiteboard r09 c3" id="box1101"></div>
+            <div class="whiteboard c4" id="box1208"></div>
+            <div class="blackboard r15 c4" id="box1207"></div>
+            <div class="whiteboard r14 c4" id="box1206"></div>
+            <div class="blackboard r13 c4" id="box1205"></div>
+            <div class="whiteboard r12 c4" id="box1204"></div>
+            <div class="blackboard r11 c4" id="box1203"></div>
+            <div class="whiteboard r10 c4" id="box1202"></div>
+            <div class="blackboard r09 c4" id="box1201"></div>
+            <div class="blackboard c5" id="box1308"></div>
+            <div class="whiteboard r15 c5" id="box1307"></div>
+            <div class="blackboard r14 c5" id="box1306"></div>
+            <div class="whiteboard r13 c5" id="box1305"></div>
+            <div class="blackboard r12 c5" id="box1304"></div>
+            <div class="whiteboard r11 c5" id="box1303"></div>
+            <div class="blackboard r10 c5" id="box1302"></div>
+            <div class="whiteboard r09 c5" id="box1301"></div>
+            <div class="whiteboard c6" id="box1408"></div>
+            <div class="blackboard r15 c6" id="box1407"></div>
+            <div class="whiteboard r14 c6" id="box1406"></div>
+            <div class="blackboard r13 c6" id="box1405"></div>
+            <div class="whiteboard r12 c6" id="box1404"></div>
+            <div class="blackboard r11 c6" id="box1403"></div>
+            <div class="whiteboard r10 c6" id="box1402"></div>
+            <div class="blackboard r09 c6" id="box1401"></div>
+            <div class="blackboard c7" id="box1508"></div>
+            <div class="whiteboard r15 c7" id="box1507"></div>
+            <div class="blackboard r14 c7" id="box1506"></div>
+            <div class="whiteboard r13 c7" id="box1505"></div>
+            <div class="blackboard r12 c7" id="box1504"></div>
+            <div class="whiteboard r11 c7" id="box1503"></div>
+            <div class="blackboard r10 c7" id="box1502"></div>
+            <div class="whiteboard r09 c7" id="box1501"></div>
+            <div class="whiteboard c8" id="box1608"></div>
+            <div class="blackboard r15 c8" id="box1607"></div>
+            <div class="whiteboard r14 c8" id="box1606"></div>
+            <div class="blackboard r13 c8" id="box1605"></div>
+            <div class="whiteboard r12 c8" id="box1604"></div>
+            <div class="blackboard r11 c8" id="box1603"></div>
+            <div class="whiteboard r10 c8" id="box1602"></div>
+            <div class="blackboard r09 c8" id="box1601"></div>
+        </div>
+    </div>
+    <div id="table">
+    <label for="Algebra">Tah:</label>
+    <input id="Algebra" name="AlgebraS">
+    <button id="submit">Odeslat</button>
+    <button id="reset">Nová hra</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
